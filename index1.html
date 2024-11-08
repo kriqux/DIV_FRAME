@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIV_FRAME</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      .frame {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: auto 1fr auto;
+        width: 90%;
+        max-width: 800px;
+        background-color: #ffffff;
+      }
+
+      .frame-top,
+      .frame-bottom {
+        background: url('ramkaVer.png') repeat-x;
+        height: 30px;
+      }
+
+      .frame-left,
+      .frame-right {
+        background: url('ramkaLB.png') repeat-y;
+        width: 30px;
+      }
+
+      .frame-top-left {
+        background: url('ramkaLVU.png') no-repeat;
+        width: 30px;
+        height: 30px;
+      }
+
+      .frame-top-right {
+        background: url('ramkaPVB.png') no-repeat;
+        transform: rotate(90deg);
+        width: 30px;
+        height: 30px;
+      }
+
+      .frame-bottom-left {
+        background: url('rankaLNU.png') no-repeat;
+        width: 30px;
+        height: 30px;
+      }
+
+      .frame-bottom-right {
+        background: url('ramkaNPU.png') no-repeat;
+        transform: rotate(180deg);
+        width: 30px;
+        height: 30px;
+      }
+
+      .frame-content {
+        padding: 40px;
+        color: #333;
+        line-height: 1.5;
+        font-size: 20px;
+        font-weight: bold;
+        /*white-space: pre;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="frame-top-left"></div>
+      <div class="frame-top"></div>
+      <div class="frame-top-right"></div>
+      <div class="frame-left"></div>
+      <div class="frame-content">
+        Бериллий — элемент главной подгруппы второй группы, второго периода
+        периодической системы химических элементов Д. И. Менделеева, с атомным
+        номером 4. Обозначается символом Be (лат. Beryllium). Высокотоксичный
+        элемент. Простое вещество бериллий — относительно твёрдый металл светло-
+        серого цвета.
+      </div>
+      <div class="frame-right"></div>
+      <div class="frame-bottom-left"></div>
+      <div class="frame-bottom"></div>
+      <div class="frame-bottom-right"></div>
+    </div>
+  </body>
+</html>
